@@ -67,8 +67,7 @@ Run the notebook to have a model....
 
 import numpy as np
 
-# [Tokenizer loading/initialization code here] 
-# Note: The tokenizer object must be loaded or recreated with the same vocabulary used for training.
+# Note: The tokenizer object must be created with the same vocabulary used for training.
 
 def predict_next_word(seed_text, n_words_to_generate):
     # 1. Preprocess seed_text (lowercase, tokenize)
