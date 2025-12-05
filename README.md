@@ -1,16 +1,16 @@
-Next Word Prediction with Recurrent Neural Networks (RNN/LSTM)
+# Next Word Prediction with Recurrent Neural Networks (RNN/LSTM)
 
 This project implements a deep learning model using a Bi-directional Long Short-Term Memory (Bi-LSTM) architecture to predict the next most probable word in a sequence. The model is trained on a literary corpus to capture complex language patterns and contextual dependencies.
 
-🌟 Project Overview
+## 🌟 Project Overview
 
 The goal of this project is to create an intelligent text generation system that can accurately predict the next word given a preceding sequence of words. This technology is the core mechanism behind features like autocomplete, predictive text, and basic language modeling.
 
 Key Technology: Bi-directional LSTM (Long Short-Term Memory) - a type of Recurrent Neural Network designed to overcome the limitations of standard RNNs in capturing long-term dependencies.
 
-🛠️ Technical Details
+## 🛠️ Technical Details
 
-Model Architecture
+### Model Architecture
 
 The model architecture is sequential and is designed for high accuracy in sequence prediction tasks:
 
@@ -24,7 +24,7 @@ Dense Layers: Used for feature combination and transformation.
 
 Output Layer: A final Dense layer with a Softmax Activation function. Softmax ensures the output is a probability distribution over the entire vocabulary, indicating the likelihood of each word being the next word. 
 
-Training Metrics
+### Training Metrics
 
 Metric                  Value
 
@@ -34,7 +34,7 @@ Final Accuracy     87.37%
 
 Model Type         Bi-directional LSTM
 
-📁 Repository Contents
+## 📁 Repository Contents
 
 File
 
@@ -47,7 +47,7 @@ sherlock_holmes_corpus.txt : The raw text file used for training the model (sour
 next_word_predictor.h5 : The trained Keras model file, containing the architecture, weights, and optimizer state. This file allows for immediate inference without retraining.
 
 
-🚀 Getting Started
+## 🚀 Getting Started
 
 Prerequisites
 
@@ -67,7 +67,7 @@ Run the notebook to have a model....
 
 import numpy as np
 
-# Note: The tokenizer object must be created with the same vocabulary used for training.
+#### Note: The tokenizer object must be created with the same vocabulary used for training.
 
 def predict_next_word(seed_text, n_words_to_generate):
     # 1. Preprocess seed_text (lowercase, tokenize)
@@ -77,10 +77,10 @@ def predict_next_word(seed_text, n_words_to_generate):
     # 5. Loop n_words_to_generate times
     pass
 
-# Example Usage
+#### Example Usage
 seed_text_1 = "my dear watson"
 print(f"Input: '{seed_text_1}'")
-# Output will be the generated sequence of words
+#### Output will be the generated sequence of words
 
 
 📈 Future Enhancements
